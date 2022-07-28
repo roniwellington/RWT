@@ -17,14 +17,75 @@
         <img src="img/logo.png" alt="Logotipo da RWT" class="cabecalho__logo">
         <button class="cabecalho__notificacao" aria-label="Notificação"><i></i></button>
     </header>
-    <nav class="menu-lateral">
+    <nav class="menu-lateral menu-lateral--ativo">
         <img src="img/logo.png" alt="Logo da RWT" class="menu-lateral__logo">
-        <a href="#" class="menu-lateral__link">Inicio</a>
-        <a href="#" class="menu-lateral__link">Posts</a>
-        <a href="#" class="menu-lateral__link">Picos</a>
-        <a href="#" class="menu-lateral__link">Integrantes</a>
-        <a href="#" class="menu-lateral__link">camisas</a>
-        <a href="#" class="menu-lateral__link">Pinturas</a>
+        <a href="#" class="menu-lateral__link menu-lateral__link--inicio menu-lateral__link--ativo">Inicio</a>
+        <a href="#" class="menu-lateral__link menu-lateral__link--videos menu-lateral__link--ativo">Posts</a>
+        <a href="#" class="menu-lateral__link menu-lateral__link--picos">Picos</a>
+        <a href="#" class="menu-lateral__link menu-lateral__link--integrantes">Integrantes</a>
+        <a href="#" class="menu-lateral__link menu-lateral__link--camisas">camisas</a>
+        <a href="#" class="menu-lateral__link menu-lateral__link--pinturas">Pinturas</a>
     </nav>
+    <main class="principal">
+        <h2 class="titulo-pagina">Início</h2>
+        <article class="cartao cartao--destaque">
+            <img src="img/banner-mobile.png" alt="Banner do cartão" class="cartao__imagem">
+            <div class="cartao__conteudo">
+                <p class="cartao__destaque">Post em Destaque</p>
+                <h3 class="cartao__titulo">RWT - CSS</h3>
+                <p class="cartao__perfil">Roni Wellington</p>
+                <p class="cartao__info cartao__info--tempo">33minutos</p>
+                <p class="cartao__info cartao__info--visualizacao">visualização</p>
+                <button class="cartao__botao  cartao__botao--play cartao__botao--destaque">Leia Mais</button>
+            </div>
+        </article>
+        <section class="secao">
+            <h3 class="titulo-secao">Post mais Acessados</h3>
+            <article class="cartao">
+                <img src="img/img03.png" alt="Imagem representando JavaScript" class="cartao__imagem">
+                <div class="cartao__conteudo">
+                    <p class="cartao__perfil">Roni Wellington</p>
+                    <h3 class="cartao__titulo">RWT - JavaScript</h3>
+                    <p class="cartao__info cartao__info--tempo">33minutos</p>
+                    <p class="cartao__info cartao__info--visualizacao">visualização</p>
+                    <button class="cartao__botao  cartao__botao--play cartao__botao--destaque">Leia Mais</button>
+                </div>
+            </article>
+
+            <article class="cartao">
+                <img src="img/img02.png" alt="Imagem representando JavaScript" class="cartao__imagem">
+                <div class="cartao__conteudo">
+                    <p class="cartao__perfil">Roni Wellington</p>
+                    <h3 class="cartao__titulo">RWT - JavaScript</h3>
+                    <p class="cartao__info cartao__info--tempo">33minutos</p>
+                    <p class="cartao__info cartao__info--visualizacao">visualização</p>
+                    <button class="cartao__botao  cartao__botao--play cartao__botao--destaque">Leia Mais</button>
+                </div>
+            </article>
+
+            <article class="cartao">
+                <img src="img/img.png" alt="Imagem representando JavaScript" class="cartao__imagem">
+                <div class="cartao__conteudo">
+                    <p class="cartao__perfil">Roni Wellington</p>
+                    <h3 class="cartao__titulo">RWT - JavaScript</h3>
+                    <p class="cartao__info cartao__info--tempo">33minutos</p>
+                    <p class="cartao__info cartao__info--visualizacao">visualização</p>
+                    <button class="cartao__botao  cartao__botao--play cartao__botao--destaque">Leia Mais</button>
+                </div>
+            </article>
+        </section>
+
+        <article class="cartao">
+            <img src="img/img4.png" alt="Imagem representando JavaScript" class="cartao__imagem">
+            <div class="cartao__conteudo">
+                <p class="cartao__perfil">Roni Wellington</p>
+                <h3 class="cartao__titulo">RWT - JavaScript</h3>
+                <p class="cartao__info cartao__info--tempo">33minutos</p>
+                <p class="cartao__info cartao__info--visualizacao">visualização</p>
+                <button class="cartao__botao  cartao__botao--play cartao__botao--destaque">Leia Mais</button>
+            </div>
+        </article>
+    </main>
+    <script src="index.js"></script>
 </body>
 </html>
