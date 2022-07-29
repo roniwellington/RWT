@@ -402,24 +402,32 @@ body {
     }
 }
 
-@media screen and (min-width:1140px){
-    .rodape {
-        display: none;
-    }
-
-    .rodape-desktop{
-        width: 100%;
-    }
-}
-
-
 .rodape {
     background-color: #5c86d1;
     text-align: center;
     padding: 20px;
 }
 
-.rodape--titulo {
+.rodape-titulo {
     padding: 20px;
 }
+
+
+@media screen and (min-width:1140px){
+    .rodape-desktop {
+        position: static;
+        width: 160px;
+        grid-column: 1;
+        
+    }
+
+    .jota{
+        background-color: #5c86d1;
+        padding: 20px;
+    }
+
+    
+}
+
+
 
