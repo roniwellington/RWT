@@ -412,7 +412,6 @@ body {
     padding: 20px;
 }
 
-
 @media screen and (min-width:1140px){
     .rodape-desktop {
         position: static;
@@ -426,7 +425,22 @@ body {
         padding: 20px;
     }
 
-    
+    .desktop-rodape {
+        background-color: #5c86d1;
+        text-align: center;
+        background-image: url('../img/logo04.png');
+        background-repeat: no-repeat;
+        padding: 50px;
+        align-items: center;
+    }
+
+    .rodape-titulo{
+        display: none;
+    }
+
+    .imagem-rodape {
+        display: none;
+    }
 }
 
 
