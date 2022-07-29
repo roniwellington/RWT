@@ -9,6 +9,13 @@ body {
     color: #fff;
 }
 
+@media screen and (min-width:1140px) {
+    body {
+        display: grid;
+        grid-template-columns: auto 1fr;
+    }
+}
+
 .cabecalho {
     display: flex;
     justify-content: space-between;
@@ -32,10 +39,60 @@ body {
     width: 40px;
 }
 
+.cabecalho__perfil {
+    display: none;
+}
+
+@media screen and (min-width:1140px) {
+    .cabecalho {
+        background-color: #5c86d1;
+        display: grid;
+        column-gap: 32px;
+        grid-template-columns: 1fr auto;
+        padding: 16px 60px;
+        height: 80px;
+        box-sizing: border-box;
+        grid-column: 2;
+    }
+
+    .cabecalho__menu {
+        display: none;
+    }
+    .cabecalho__logo {
+        display: none;
+    }
+    .cabecalho__perfil{
+        display: grid;
+        grid-template-columns: repeat(3, auto);
+        column-gap: 8px;
+        align-items: center;
+        justify-self: flex-end;
+        color: rgb(255, 255, 255);
+        padding: 8px 32px;
+        border-right: 1px solid #fff;
+    }
+    .cabecalho__perfil::before {
+        content: "";
+        display: block;
+        width: 32px;
+        height: 32px;
+        background-image: url(../img/perfil.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
+    .cabecalho__perfil::after {
+        content: \e90d;
+        color: #fff;
+        font-size: 1.5rem;
+    }
+}
+
 .menu-lateral {
     display: flex;
     flex-direction: column;
-    background-color: #5c86d1;
+    background-color: #316acd;
     width: 75vw;
     height: 100vh;
 
@@ -101,6 +158,15 @@ body {
     content: "\e90a";
 }
 
+@media screen and (min-width:1140px){
+    .menu-lateral{
+        position: static;
+        width: 200px;
+        grid-column: 1;
+        grid-row: 1 / span 2;
+    }
+}
+
 .principal {
     padding: 24px 16px;
     display: grid;
@@ -113,11 +179,21 @@ body {
     font-weight: bold;
 }
 
+@media screen and (min-width: 1140px) {
+    .principal {
+        display: grid;
+        grid-template-columns: auto 1fr auto;
+        column-gap: 32px;
+        padding: 16px 60px;
+        grid-column: 2;
+    }
+}
+
 .cartao {
     width: 100%;
     border-radius: 15px;
     overflow: hidden;
-    background-color: #ffffff;
+    background-color: #fff;
 }
 
 .cartao--destaque {
@@ -175,8 +251,9 @@ body {
     width: 40px;
     height: 40px;
     border-radius: 10px;
-    color: #fff;
+    color: rgb(255, 255, 255);
     font-size: 0.9rem;
+    justify-self: flex-end;
 }
 
 .cartao__botao--play::before {
@@ -192,3 +269,90 @@ body {
 .cartao__botao--destaque::before {
     margin-right: 8px;
 }
+
+.cartao--recentes {
+    display: none;
+}
+
+
+@media screen and (min-width:1140px){
+    .cartao--recentes{
+        display: grid;
+        grid-template-columns: auto auto;
+        align-items: center;
+        row-gap: 24px;
+        width: 256px;
+        padding: 16px;
+        box-sizing: border-box;
+    }
+
+    .cartao--recentes .cartao__titulo {
+        grid-column: auto;
+    }
+
+    .carta__link {
+        font-size: 0.8rem;
+        font-weight: 600;
+        color: #0480dc;
+        justify-self: flex-end;
+    }
+
+    .cartao__lista {
+        display: grid;
+        grid-row: 16px;
+        grid-column: span 2;
+    }
+
+    .carta__item {
+        display: grid;
+        grid-template-columns: auto 1fr;
+        gap: 8px;
+    }
+
+    .carta__item-thumbnail{
+        width: 32px;
+        grid-row: span 2;
+    }
+
+    .cartao__item-titulo {
+        font-size: 0.9rem;
+        line-height: 1.2rem;
+        font-weight: bold;
+        color: #0480dc;
+    }
+
+    .cartao__item-perfil {
+        font-size: 0.8rem;
+        color: #316acd;
+    }
+}
+
+
+.secao {
+    display: grid;
+    gap: 16px;
+}
+
+.titulo-secao {
+    color: #5c86d1;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+@media screen and (min-width:1140px){
+    .rodape {
+        display: none;
+    }
+}
+
+
+.rodape {
+    background-color: #5c86d1;
+    text-align: center;
+    padding: 20px;
+}
+
+.rodape--titulo {
+    padding: 20px;
+}
+
