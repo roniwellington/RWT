@@ -92,7 +92,7 @@ body {
 .menu-lateral {
     display: flex;
     flex-direction: column;
-    background-color: #316acd;
+    background-color: #5081d7;
     width: 75vw;
     height: 100vh;
 
@@ -164,6 +164,14 @@ body {
         width: 200px;
         grid-column: 1;
         grid-row: 1 / span 2;
+        height: 100%;
+    }
+
+    .titulo-rodape{
+        background-color: #fff;
+        text-align: center;
+        color: #fff;
+        padding: 20px;
     }
 }
 
@@ -200,6 +208,8 @@ body {
         padding: 16px 60px;
         grid-column: 2;
     }
+
+   
 
     .titulo-secao{
         grid-column: span 4;
@@ -402,46 +412,7 @@ body {
     }
 }
 
-.rodape {
-    background-color: #5c86d1;
-    text-align: center;
-    padding: 20px;
-}
 
-.rodape-titulo {
-    padding: 20px;
-}
-
-@media screen and (min-width:1140px){
-    .rodape-desktop {
-        position: static;
-        width: 160px;
-        grid-column: 1;
-        
-    }
-
-    .jota{
-        background-color: #5c86d1;
-        padding: 20px;
-    }
-
-    .desktop-rodape {
-        background-color: #5c86d1;
-        text-align: center;
-        background-image: url('../img/logo04.png');
-        background-repeat: no-repeat;
-        padding: 50px;
-        align-items: center;
-    }
-
-    .rodape-titulo{
-        display: none;
-    }
-
-    .imagem-rodape {
-        display: none;
-    }
-}
 
 
 
